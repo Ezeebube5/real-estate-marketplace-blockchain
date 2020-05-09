@@ -1,6 +1,6 @@
-# Udacity Blockchain Capstone
+# Blockchain Capstone Project - Real Estate MarketPlace
 
-The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
+This capstone project builds upon the knowledge gained throughout the course in order to build a decentralized housing product. 
 
 # Project Resources
 
