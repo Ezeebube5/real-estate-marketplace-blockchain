@@ -54,7 +54,7 @@ module.exports = {
         },
 
         network_id: "4",
-        from:"<metamask mnemonic>",
+        from:"<metamask address>",
         gas: 9999999,           // Gas sent with each transaction (default: ~6700000)
         gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
 
@@ -97,7 +97,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-       version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
+       version: "0.5.5",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {

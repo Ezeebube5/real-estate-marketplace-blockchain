@@ -14,7 +14,7 @@ ZoKrates 0.5.2
 
 truffle-hdwallet-provider@1.0.17
 
-Compiler: Solidity - 0.5.1 (solc-js)
+Compiler: Solidity - 0.5.5 (solc-js)
 
 ## Contracts
 ### Rinkeby Contract Address
