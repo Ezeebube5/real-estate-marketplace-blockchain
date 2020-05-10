@@ -77,7 +77,7 @@ contract Pausable is Ownable {
     //  5) create a Paused & Unpaused event that emits the address that triggered the event
     event Paused(address indexed caller);
     event Unpaused(address indexed caller);
-}cd
+}
 
 
 contract ERC165 {
