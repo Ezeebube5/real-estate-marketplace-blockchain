@@ -18,7 +18,7 @@
  *
  */
 
-// const HDWalletProvider = require('truffle-hdwallet-provider');
+ const HDWalletProvider = require('truffle-hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
@@ -47,6 +47,18 @@ module.exports = {
       port: 8545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
      },
+     rinkeby: {
+      provider: function() {
+
+          return new HDWalletProvider("<metamask mnemonic>","https://rinkeby.infura.io/v3/5293a22d038b4deeb2f5fe6ed603223b")
+        },
+
+        network_id: "4",
+        from:"<metamask mnemonic>",
+        gas: 9999999,           // Gas sent with each transaction (default: ~6700000)
+        gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
+
+      },
 
     // Another network with more advanced options...
     // advanced: {
@@ -85,7 +97,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      // version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
+       version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
